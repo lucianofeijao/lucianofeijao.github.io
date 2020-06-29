@@ -110,5 +110,9 @@ yarn-error.log
 /cypress/screenshots/
 /__sapper__/
 
+# Google API
 process/credentials.json
 process/token.json
+
+# Image sizer temp data
+tmp/

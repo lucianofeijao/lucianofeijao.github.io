@@ -1,0 +1,32 @@
+[
+	{
+		"slug": "feijao-01",
+		"extension": "jpg",
+		"ratio": 1.4511363636363637,
+		"sizes": [
+			180,
+			300,
+			460,
+			720,
+			1050,
+			1440,
+			2000
+		],
+		"hasRetina": true
+	},
+	{
+		"slug": "feijao-02",
+		"extension": "jpg",
+		"ratio": 1.4423076923076923,
+		"sizes": [
+			180,
+			300,
+			460,
+			720,
+			1050,
+			1440,
+			2000
+		],
+		"hasRetina": true
+	}
+]
