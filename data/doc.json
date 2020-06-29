@@ -1,0 +1,52 @@
+{
+  "about": [
+    {
+      "type": "text",
+      "value": "<a href=\"https://www.youtube.com/watch?v=Yw6u6YkTgQ4\">hello, world</a>"
+    }
+  ],
+  "grid#first": {
+    "hed": "",
+    "leadin": "",
+    "cols": "1",
+    "align": "center",
+    "asset-max-width": "full",
+    "notes": "",
+    "sources": "",
+    "credit": "",
+    "items": [
+      {
+        "asset": "100000007208894"
+      },
+      {
+        "asset": "100000007208833"
+      },
+      {
+        "asset": "100000007208896"
+      },
+      {
+        "asset": "100000007208827"
+      },
+      {
+        "asset": "100000007208895"
+      },
+      {
+        "asset": "100000007208835"
+      },
+      {
+        "asset": "100000007208836"
+      },
+      {
+        "asset": "100000007208837"
+      },
+      {
+        "asset": "100000007209709"
+      }
+    ]
+  },
+  "work": [],
+  "image": {
+    "slug": "",
+    "caption": ""
+  }
+}
