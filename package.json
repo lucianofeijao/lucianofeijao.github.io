@@ -9,7 +9,9 @@
     "start": "node __sapper__/build",
     "cy:run": "cypress run",
     "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
+    "test": "run-p --race dev cy:run",
+    "download": "node scripts/data-download",
+    "images": "node scripts/media-processing"
   },
   "dependencies": {
     "compression": "^1.7.1",

@@ -1,5 +1,6 @@
 <script>
-	import { images } from '../../data/images.json';
+	// import { images } from '../../data/images.json';
+	import images from '../../data/imagedata.json';
 	// import pkg from '../package.json';
 	// console.log(`running version ${version}`);	
 </script>
@@ -16,8 +17,8 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
-{#each images as { src }}
-<img src="images/{src}">
+{#each images as { slug, sizes, extension }}
+<img alt="" src="images/{slug}-180_x2.{extension}">
 {/each}
 
 <style>
