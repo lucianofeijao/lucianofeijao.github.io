@@ -1,8 +1,18 @@
 <script>
-	// import { images } from '../../data/images.json';
+	import 'lazysizes';
 	import images from '../../data/imagedata.json';
-	// import pkg from '../package.json';
-	// console.log(`running version ${version}`);	
+
+	const imagesPath = 'images/';
+	images.map(i => {
+		const { slug, sizes, extension, hasRetina } = i;
+		i.srcset = sizes.reduce((acc, curr, index, array) => {
+			acc += `${imagesPath}${slug}-${curr}.${extension} ${curr}w`;
+			if (hasRetina) acc += `, ${imagesPath}${slug}-${curr}_x2.${extension} ${curr*2}w`;
+			if (index < array.length - 1) acc += ',';
+			return acc;
+		}, '');
+		return i;
+	});
 </script>
 
 <svelte:head>
@@ -17,8 +27,8 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
-{#each images as { slug, sizes, extension }}
-<img alt="" src="images/{slug}-180_x2.{extension}">
+{#each images as { slug, sizes, extension, srcset }}
+<img alt="" data-sizes="auto" data-srcset="{srcset}" class="big lazyload"/>
 {/each}
 
 <style>
@@ -54,5 +64,10 @@
 		h1 {
 			font-size: 4em;
 		}
+	}
+
+	img.big {
+		width: 100%;
+		max-width: unset;
 	}
 </style>
