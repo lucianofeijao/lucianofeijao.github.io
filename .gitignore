@@ -108,7 +108,8 @@ dist
 /src/node_modules/@sapper/
 yarn-error.log
 /cypress/screenshots/
-/__sapper__/
+/__sapper__/build/
+/__sapper__/dev/
 
 # Google API
 process/credentials.json
